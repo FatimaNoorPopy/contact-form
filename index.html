@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h2>Contact Us</h2>
+        <div id="error_massage"></div>
+        <form id="myform" onsubmit="return validation()">
+            <div class="input-field">
+               <input type="text" placeholder="Full Name" id="name">
+            </div>
+
+            <div class="input-field">
+                <input type="text" placeholder="Your Email" id="email">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Phone Number (Optional)" id="phone">
+                
+            </div>
+            <div class="input-field">
+                
+             <p class = "tag-p">Enter your subject
+
+                <select class="top" type="text" id="subject">
+                    <option value="CSE">CSE</option>
+                    <option value="BBA">BBA</option>
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="MSJ">MSJ</option>
+                  </select>
+             </p>
+                    
+            </div>
+            <div class="input-field">
+                <textarea id="message" placeholder="Write your message here"></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- <script>
+        function validation() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+          
+            var error_massage = document.getElementById("error_massage");
+            var text;
+            error_massage.style.padding = "10px";
+
+            if (name.length < 5) {
+                text = "Please Enter your correct Name";
+                error_massage.innerHTML = text;
+                return false;
+            }
+            if (email.indexOf("@") == -1 || email.length < 6) {
+                text = "Please enter your valid Email";
+                error_massage.innerHTML = text;
+                return false;
+            }
+
+            if (phone.length < 11) {
+                text = "Please enter your valid phone";
+                error_massage.innerHTML = text;
+                return false;
+            }
+
+            alert("Form return successfully")
+            return true;
+
+        }
+    </script> -->
+
+
+
+
+</body>
+
+</html>
